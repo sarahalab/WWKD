@@ -82,7 +82,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*
     public bool _isFacingRight = true;
     public bool IsFacingRight { get { return _isFacingRight; }
         private set
@@ -94,8 +93,6 @@ public class PlayerController : MonoBehaviour
             _isFacingRight = value;
         }
     }
-
-    */
 
     Rigidbody2D rb;
     Animator animator;
@@ -129,9 +126,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(Vector2.right * (currentMoveSpeed * Time.deltaTime)); //GEOMETRY DASH this makes Bibby automatically walk to the right
+        //transform.Translate(Vector2.right * (currentMoveSpeed * Time.deltaTime)); //GEOMETRY DASH this makes Bibby automatically walk to the right
 
-      //  rb.velocity = new Vector2(moveInput.x * currentMoveSpeed, rb.velocity.y); //COMMENT OUT FOR GEOMETRY DASH
+      rb.velocity = new Vector2(moveInput.x * currentMoveSpeed, rb.velocity.y); //COMMENT OUT FOR GEOMETRY DASH
     }
 
    public void OnMove(InputAction.CallbackContext context)
@@ -141,14 +138,14 @@ public class PlayerController : MonoBehaviour
 
         moveInput = context.ReadValue<Vector2>(); //this makes x and y movements
 
-        IsMoving = true; //GEOMETRY DASH make moving status always true upon first button press
+        //IsMoving = true; //GEOMETRY DASH make moving status always true upon first button press
 
-     //   IsMoving = moveInput != Vector2.zero; //Is moving is true as long as its not equal to zero COMMENT OUT FOR GEOMETRY DASH
+        IsMoving = moveInput != Vector2.zero; //Is moving is true as long as its not equal to zero COMMENT OUT FOR GEOMETRY DASH
 
-     //   SetFacingDirection(moveInput); //DISABLE FOR GEOMETRY DASH
+        SetFacingDirection(moveInput); //DISABLE FOR GEOMETRY DASH
     }
 
-    /*
+    
     private void SetFacingDirection(Vector2 moveInput)
     {
         if (moveInput.x > 0 && !IsFacingRight)
@@ -162,7 +159,6 @@ public class PlayerController : MonoBehaviour
             IsFacingRight = false;
         }
     }
-    */
 
     public void onRun(InputAction.CallbackContext context) //'context' regard the pressing of a keyboard button here
     {

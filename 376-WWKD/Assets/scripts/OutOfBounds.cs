@@ -32,7 +32,6 @@ public class OutOfBounds : MonoBehaviour
         {
             //drownSoundEffect.Play();
             playerHealth.TakeDamage(fallDamage);
-            StartCoroutine(spikeDamage.DelayedRespawn());
         }
     }
 }

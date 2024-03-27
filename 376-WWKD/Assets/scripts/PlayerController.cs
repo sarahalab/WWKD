@@ -175,6 +175,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //play jump sound with jump action
+    
     [SerializeField] private AudioSource jumpSoundEffect;
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -183,7 +184,7 @@ public class PlayerController : MonoBehaviour
 
         if(context.started && touchingDirections.IsGrounded)
         {
-            jumpSoundEffect.Play();
+            //jumpSoundEffect.Play();
             animator.SetTrigger(AnimationStrings.jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
         }

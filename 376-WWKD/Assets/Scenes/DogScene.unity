@@ -20858,7 +20858,7 @@ PrefabInstance:
     - target: {fileID: 3809905421789797540, guid: 71220aefc3bdb204daaaf96c0806109b, type: 3}
       propertyPath: jumpSoundEffect
       value: 
-      objectReference: {fileID: 1796217736}
+      objectReference: {fileID: 0}
     - target: {fileID: 3809905421789797540, guid: 71220aefc3bdb204daaaf96c0806109b, type: 3}
       propertyPath: deathSoundEffect
       value: 

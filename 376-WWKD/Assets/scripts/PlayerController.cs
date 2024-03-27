@@ -126,9 +126,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //transform.Translate(Vector2.right * (currentMoveSpeed * Time.deltaTime)); //GEOMETRY DASH this makes Bibby automatically walk to the right
+        //transform.Translate(Vector2.right * (currentMoveSpeed * Time.deltaTime)); //INFINITE RUNNING MODE this makes player automatically walk to the right
 
-      rb.velocity = new Vector2(moveInput.x * currentMoveSpeed, rb.velocity.y); //COMMENT OUT FOR GEOMETRY DASH
+      rb.velocity = new Vector2(moveInput.x * currentMoveSpeed, rb.velocity.y); //COMMENT OUT FOR INFINITE RUNNING MODE
     }
 
    public void OnMove(InputAction.CallbackContext context)
@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
 
         IsMoving = moveInput != Vector2.zero; //Is moving is true as long as its not equal to zero COMMENT OUT FOR GEOMETRY DASH
 
-        SetFacingDirection(moveInput); //DISABLE FOR GEOMETRY DASH
+        SetFacingDirection(moveInput); //DISABLE FOR INFINITE RUNNING MODE
     }
 
     

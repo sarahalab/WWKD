@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
+
+    public Animator anim;
+
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     private bool dead;
@@ -26,6 +29,10 @@ public class Health : MonoBehaviour
             dead = true;
 
             StartCoroutine(DelayedRespawn());
+        }
+        else
+        {
+            anim.SetTrigger("hurt");
         }
     }
     public IEnumerator DelayedRespawn()

@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/DogScene.unity
     guid: f5bb7cd78f392e14fa2bb2654f4a1231
   - enabled: 0
-    path: Assets/Scenes/DogScene_old.unity
+    path: Assets/Scenes/old_DogScene.unity
     guid: d575361840b9889468311a5051ab6d54
   m_configObjects: {}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3c64a6cc3fd1e045867a85c1a7cab36
+guid: 66e9710744ab3434a801e038ec9c73f7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bibbyDeath_0
+      name: dog_death_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 50
-        height: 50
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,41 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 675ce910d8804e3419d83478f6bac455
-      internalID: -65187743
+      spriteID: 280afa50758d8ac47aecc9a8d47730ba
+      internalID: -1647203397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bibbyDeath_1
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc4230c79509c8543a48f2faa72adcf3
-      internalID: 81613191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bibbyDeath_2
+      name: dog_death_1
       rect:
         serializedVersion: 2
         x: 100
         y: 0
-        width: 50
-        height: 50
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,41 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cbf8e27897ba3b4f9bb23d5bd651ed8
-      internalID: 590892165
+      spriteID: f33c0b6b32cea80419872cf8b53a1639
+      internalID: 633362710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bibbyDeath_3
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ef540e6a8baae540a0b5d312a95999f
-      internalID: -55464372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bibbyDeath_4
+      name: dog_death_2
       rect:
         serializedVersion: 2
         x: 200
         y: 0
-        width: 50
-        height: 50
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aab7e7bb37910dd44a4014be6ecbb216
-      internalID: -311678717
+      spriteID: b234e7a04e2dff04b9ee619c90ca93dc
+      internalID: 1277963725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bibbyDeath_5
+      name: dog_death_3
       rect:
         serializedVersion: 2
-        x: 250
+        x: 300
         y: 0
-        width: 50
-        height: 50
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +200,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73fbc54e59b8d64ba9171ba258500d5
-      internalID: -1531872711
+      spriteID: 0b7f683bb30e38745bc319a2b6df3b50
+      internalID: -136166567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog_death_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3576ed582b6ac4bb1463b03df45fbe
+      internalID: 460484299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog_death_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc916e5464dac924ab82efce824f8db8
+      internalID: -484493344
       vertices: []
       indices: 
       edges: []
@@ -259,12 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bibbyDeath_0: -65187743
-      bibbyDeath_1: 81613191
-      bibbyDeath_2: 590892165
-      bibbyDeath_3: -55464372
-      bibbyDeath_4: -311678717
-      bibbyDeath_5: -1531872711
+      dog_death_0: -1647203397
+      dog_death_1: 633362710
+      dog_death_2: 1277963725
+      dog_death_3: -136166567
+      dog_death_4: 460484299
+      dog_death_5: -484493344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

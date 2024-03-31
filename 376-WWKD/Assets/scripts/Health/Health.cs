@@ -35,6 +35,12 @@ public class Health : MonoBehaviour
             anim.SetTrigger("hurt");
         }
     }
+
+    public void Heal(float amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, startingHealth);
+    }
+
     public IEnumerator DelayedRespawn()
     {
         yield return new WaitForSeconds(1.0f); // Waits 1 seconds to respawn the player

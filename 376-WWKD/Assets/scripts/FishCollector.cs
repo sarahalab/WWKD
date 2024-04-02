@@ -8,30 +8,32 @@ public class FishCollector : MonoBehaviour
     private float score = 0;
     private bool startScoreCounter = false;
 
-    private void Update()
+    [SerializeField] private Text kibbleScore;
+
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (kibbleScore == null)
         {
-            startScoreCounter = true; 
-        }
-        if (startScoreCounter == true)
-        {
-            score += 100f * (Time.deltaTime);
-            fishScore.text = "Score: " + Mathf.Round(score);
+            Debug.LogError("KibbleScore Text component is not assigned in the Inspector.", this);
         }
     }
 
-    [SerializeField] private Text fishScore;
-    [SerializeField] private AudioSource collectionSoundEffect;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Goldfish"))
+        if (collision.gameObject.CompareTag("Kibble"))
         {
-            collectionSoundEffect.Play();
-            Destroy(collision.gameObject);
-            score += 1000;
-            fishScore.text = "Score: " + score;
+            if (kibbleScore != null)
+            {
+                Destroy(collision.gameObject);
+                score += 1000;
+                kibbleScore.text = "Score: " + score;
+            }
+            else
+            {
+                Debug.LogError("Trying to update score, but kibbleScore is null.", this);
+            }
         }
+
         if (collision.gameObject.CompareTag("FinishLine"))
         {
             startScoreCounter = false;

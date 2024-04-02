@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Goldfish
   - FinishLine
+  - Kibble
   layers:
   - Default
   - TransparentFX

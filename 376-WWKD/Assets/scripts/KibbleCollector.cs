@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FishCollector : MonoBehaviour
+public class KibbleCollector : MonoBehaviour
 {
     private float score = 0;
     //private bool startScoreCounter = false;

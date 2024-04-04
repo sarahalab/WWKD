@@ -11,10 +11,14 @@ public class LevelSelection : MonoBehaviour
     public void startDogLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        Time.timeScale = 1.0f;
+        PauseMenu.GameIsPaused = false;
     }
     public void startCatLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1.0f;
+        PauseMenu.GameIsPaused = false;
     }
 
     public void returnMenus()

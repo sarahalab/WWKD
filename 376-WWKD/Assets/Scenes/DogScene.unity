@@ -4860,6 +4860,18 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.59607846
       objectReference: {fileID: 0}
+    - target: {fileID: 1971462292317333205, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_text
+      value: MAIN MENU
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971462292317333205, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971462292317333205, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2509593046057112525, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4980,9 +4992,49 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.5943396
       objectReference: {fileID: 0}
+    - target: {fileID: 5313073448477782367, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.8000083
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313073448477782367, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -106.69999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033709240287317833, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033709240287317833, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6121288399475630608, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_Name
+      value: QuitButton
+      objectReference: {fileID: 0}
     - target: {fileID: 6366655937673520552, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
       propertyPath: m_text
       value: DOG WORLD
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366655937673520552, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_fontSize
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366655937673520552, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366655937673520552, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: 2427
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420621489773929644, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420621489773929644, guid: a5fe91dd7de3cec4b8ced9fc536c9182, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -39.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

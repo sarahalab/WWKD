@@ -184,7 +184,7 @@ public class PlayerController : MonoBehaviour
 
         if(context.started && touchingDirections.IsGrounded)
         {
-            //jumpSoundEffect.Play();
+            jumpSoundEffect.Play();
             animator.SetTrigger(AnimationStrings.jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpStrength);
         }

@@ -17,9 +17,12 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
     }
 
+    [SerializeField] private AudioSource takeDamageEffect;
+    [SerializeField] private AudioSource eatingEffect;
+
     public void TakeDamage(float _damage)
     {
-
+        takeDamageEffect.Play();    //Play take damage audio
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
         if (currentHealth <= 0 && !dead)
         {
@@ -38,6 +41,7 @@ public class Health : MonoBehaviour
 
     public void Heal(float amount)
     {
+        eatingEffect.Play(); //Play eating audio
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, startingHealth);
     }
 

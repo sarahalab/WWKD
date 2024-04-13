@@ -9,12 +9,13 @@ public class KibbleCollector : MonoBehaviour
     //private bool startScoreCounter = false;
 
     [SerializeField] private Text kibbleScore;
-
+    [SerializeField] private AudioSource collectingEffect;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Kibble"))
         {
+            collectingEffect.Play(); //Play collecting audio
             Destroy(collision.gameObject);
             score += 1;
             kibbleScore.text = "Kibble: " + score;

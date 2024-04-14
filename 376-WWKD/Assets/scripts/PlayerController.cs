@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
 
     TouchingDirections touchingDirections;
  
-
     public float currentMoveSpeed
     {
         get
@@ -126,8 +125,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //transform.Translate(Vector2.right * (currentMoveSpeed * Time.deltaTime)); //INFINITE RUNNING MODE this makes player automatically walk to the right
-
       rb.velocity = new Vector2(moveInput.x * currentMoveSpeed, rb.velocity.y); //COMMENT OUT FOR INFINITE RUNNING MODE
     }
 
@@ -138,9 +135,7 @@ public class PlayerController : MonoBehaviour
 
         moveInput = context.ReadValue<Vector2>(); //this makes x and y movements
 
-        //IsMoving = true; //GEOMETRY DASH make moving status always true upon first button press
-
-        IsMoving = moveInput != Vector2.zero; //Is moving is true as long as its not equal to zero COMMENT OUT FOR GEOMETRY DASH
+        IsMoving = moveInput != Vector2.zero;
 
         SetFacingDirection(moveInput); //DISABLE FOR INFINITE RUNNING MODE
     }

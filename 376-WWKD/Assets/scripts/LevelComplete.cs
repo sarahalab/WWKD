@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelComplete : MonoBehaviour
 {
-  public void Restart()
+  public void GotoMainMenu()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("StartMenu");
     }
 
     public void QuitGame()

@@ -37511,6 +37511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1476066458}
+  playerController: {fileID: 1796217707}
 --- !u!61 &1585319956
 BoxCollider2D:
   m_ObjectHideFlags: 0

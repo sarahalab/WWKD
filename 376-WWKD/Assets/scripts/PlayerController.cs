@@ -112,16 +112,7 @@ public class PlayerController : MonoBehaviour
         initialPosition = transform.position;
     }
 
-    [SerializeField] private AudioSource drownEffect;
-
     // Update is called once per frame
-    void Update()
-    {
-        if (transform.position.y < boundary)
-        {
-            drownEffect.Play();
-        }
-    }
 
     private void FixedUpdate()
     {
